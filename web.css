@@ -1,0 +1,374 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans";
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    align-items: center;
+}
+
+.logo {
+    width: 70px;
+    margin-top: -7px;
+    margin-right: 48px;
+}
+
+.nav-items {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-link.active {
+    font-weight: 600;
+    border-bottom: 3px solid #3d99d6;
+}
+
+button.btn-secondary{
+    padding: 12px 22px;
+    border: 3px solid  #000000;
+    background-color: transparent;
+    color:  #000000;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 100px;
+}
+
+.login {
+    text-decoration: none;
+    color:  #000000;
+    font-size: 16px;
+}
+
+.text-section {
+    width: 80%;
+    height: 70%;
+    top: 30%;
+    left: 130px;
+    position: absolute;
+}
+
+h1.large-title {
+    font-size: 60px;
+    color: black;
+}
+
+p.text-muted {
+    font-size: 20px;
+    color: black;
+    margin: 16px 0;
+}
+
+button.btn-primary {
+    padding: 22px 58px;
+    border-radius: 100px;
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    box-shadow: 0 10px 20px black;
+    margin: 24px 0;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .5s;
+}
+
+button.btn-primary:hover {
+    width: 25%;
+}
+
+button {
+    transition: .7s;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    background:  #000099;
+    cursor: pointer;
+}
+
+button:hover:before {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+}
+
+button:hover:after {
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+}
+
+.app-img {
+    width: 300px;
+    float: right;
+}
+
+.app-img img {
+    width: 100%;
+    padding-top: 25px;
+}
+
+footer {
+    padding: 550px 0 50px 0;
+    background-color: white;
+    text-align: center;
+}
+
+footer h4 {
+    font-size: 15px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.button-dimensi {
+    padding: 12px 24px;
+    color: black;
+    display: inline-block;
+    opacity: 0,7;
+    border-radius: 4px;
+  }
+
+  .animasi {
+    transition: 0.1s;
+    -webkit-transition: 0.1s;
+  }
+
+  .tombol-aktif {
+    padding: 10px 40px;
+    border-radius: 10px;
+    float: left;
+    font-family: sans-serif;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .biru {
+    background-color: #80ffd4;;
+    border-bottom: 5px solid black;
+  }
+
+  @media (max-width: 720px) {
+    .container {
+        width: 100%;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      height: 50px;
+      align-items: center;
+  }
+
+  .nav-items {
+      width: 65%;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .nav-links {
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      list-style: none;
+      align-items: center;
+  }
+
+  .nav-link.active {
+      font-weight: 600;
+      border-bottom: 3px solid #3d99d6;
+  }
+  .text-section {
+      width: 40%;
+      height: 50%;
+      top: 20%;
+      left: 80px;
+      position: absolute;
+  }
+
+  h1.large-title {
+      font-size: 30px;
+      color: black;
+  }
+
+  p.text-muted {
+      font-size: 15px;
+      color: black;
+      margin: 16px 0;
+  }
+
+  button.btn-primary {
+      padding: 10px 30px;
+      background-color: #3d99d6;
+      border-radius: 100px;
+      color: white;
+      border: none;
+      font-size: 20px;
+      font-weight: 500;
+      box-shadow: 0 10px 20px black;
+      margin: 24px 0;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: .5s;
+  }
+
+  button.btn-primary:hover {
+      width: 100%;
+  }
+
+  footer {
+      padding: 400px 0 50px 0;
+      background-color: white;
+      text-align: center;
+  }
+
+  footer h4 {
+      font-size: 15px;
+      letter-spacing: 5px;
+      margin-bottom: 50px;
+  }
+
+  .button-dimensi {
+      padding: 12px 24px;
+      color: black;
+      display: inline-block;
+      opacity: 0,7;
+      border-radius: 4px;
+    }
+
+    .tombol-aktif {
+      padding: 10px 40px;
+      border-radius: 10px;
+      float: left;
+      font-family: sans-serif;
+      font-size: 15px;
+      color: white;
+      text-decoration: none;
+    }
+}
+
+@media (min-width: 720px) and (max-width: 992px) {
+    .container {
+        width: 100%;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      height: 50px;
+      align-items: center;
+  }
+
+  .nav-items {
+      width: 65%;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .nav-links {
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      list-style: none;
+      align-items: center;
+  }
+
+  .nav-link.active {
+      font-weight: 600;
+      border-bottom: 3px solid #3d99d6;
+  }
+  .text-section {
+      width: 40%;
+      height: 50%;
+      top: 20%;
+      left: 80px;
+      position: absolute;
+  }
+
+  h1.large-title {
+      font-size: 35px;
+      color: black;
+  }
+
+  p.text-muted {
+      font-size: 20px;
+      color: black;
+      margin: 16px 0;
+  }
+
+  button.btn-primary {
+      padding: 10px 30px;
+      background-color: #3d99d6;
+      border-radius: 100px;
+      color: white;
+      border: none;
+      font-size: 20px;
+      font-weight: 500;
+      box-shadow: 0 10px 20px black;
+      margin: 24px 0;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: .5s;
+  }
+
+  button.btn-primary:hover {
+      width: 70%;
+  }
+
+  footer {
+      padding: 400px 0 50px 0;
+      background-color: white;
+      text-align: center;
+  }
+
+  footer h4 {
+      font-size: 20px;
+      letter-spacing: 5px;
+      margin-bottom: 50px;
+  }
+
+  .button-dimensi {
+      padding: 12px 24px;
+      color: black;
+      display: inline-block;
+      opacity: 0,7;
+      border-radius: 4px;
+    }
+
+    .tombol-aktif {
+      padding: 10px 40px;
+      border-radius: 10px;
+      float: left;
+      font-family: sans-serif;
+      font-size: px;
+      color: white;
+      text-decoration: none;
+    }
+}
